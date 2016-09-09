@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :carts
 
-  resources :movies
+  resources :movies, only: [:show, :index]
 
   get "welcome/index"
 

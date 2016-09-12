@@ -2,43 +2,44 @@
 1 verbose cli [ '/usr/local/bin/node',
 1 verbose cli   '/usr/local/bin/npm',
 1 verbose cli   'install',
-1 verbose cli   'grunt-contrib-watch-save-dev' ]
+1 verbose cli   '-g',
+1 verbose cli   'gulp' ]
 2 info using npm@3.9.5
 3 info using node@v4.3.0
 4 silly loadCurrentTree Starting
 5 silly install loadCurrentTree
-6 silly install readLocalPackageData
-7 silly fetchPackageMetaData grunt-contrib-watch-save-dev
-8 silly fetchNamedPackageData grunt-contrib-watch-save-dev
-9 silly mapToRegistry name grunt-contrib-watch-save-dev
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData gulp
+8 silly fetchNamedPackageData gulp
+9 silly mapToRegistry name gulp
 10 silly mapToRegistry using default registry
 11 silly mapToRegistry registry https://registry.npmjs.org/
 12 silly mapToRegistry data Result {
-12 silly mapToRegistry   raw: 'grunt-contrib-watch-save-dev',
+12 silly mapToRegistry   raw: 'gulp',
 12 silly mapToRegistry   scope: null,
-12 silly mapToRegistry   name: 'grunt-contrib-watch-save-dev',
+12 silly mapToRegistry   name: 'gulp',
 12 silly mapToRegistry   rawSpec: '',
 12 silly mapToRegistry   spec: 'latest',
 12 silly mapToRegistry   type: 'tag' }
-13 silly mapToRegistry uri https://registry.npmjs.org/grunt-contrib-watch-save-dev
-14 verbose request uri https://registry.npmjs.org/grunt-contrib-watch-save-dev
+13 silly mapToRegistry uri https://registry.npmjs.org/gulp
+14 verbose request uri https://registry.npmjs.org/gulp
 15 verbose request no auth needed
-16 info attempt registry request try #1 at 8:43:20 PM
-17 verbose request id ab2339be30e2c887
-18 http request GET https://registry.npmjs.org/grunt-contrib-watch-save-dev
+16 info attempt registry request try #1 at 11:32:14 AM
+17 verbose request id ee1a71f00cb1622f
+18 http request GET https://registry.npmjs.org/gulp
 19 info retry will retry, error on last attempt: Error: self signed certificate in certificate chain
-20 info attempt registry request try #2 at 8:43:31 PM
-21 http request GET https://registry.npmjs.org/grunt-contrib-watch-save-dev
+20 info attempt registry request try #2 at 11:32:24 AM
+21 http request GET https://registry.npmjs.org/gulp
 22 info retry will retry, error on last attempt: Error: self signed certificate in certificate chain
-23 info attempt registry request try #3 at 8:44:32 PM
-24 http request GET https://registry.npmjs.org/grunt-contrib-watch-save-dev
+23 info attempt registry request try #3 at 11:33:25 AM
+24 http request GET https://registry.npmjs.org/gulp
 25 silly fetchPackageMetaData Error: self signed certificate in certificate chain
 25 silly fetchPackageMetaData     at Error (native)
 25 silly fetchPackageMetaData     at TLSSocket.<anonymous> (_tls_wrap.js:1016:38)
 25 silly fetchPackageMetaData     at emitNone (events.js:67:13)
 25 silly fetchPackageMetaData     at TLSSocket.emit (events.js:166:7)
 25 silly fetchPackageMetaData     at TLSSocket._finishInit (_tls_wrap.js:585:8)
-25 silly fetchPackageMetaData  error for grunt-contrib-watch-save-dev { [Error: self signed certificate in certificate chain] code: 'SELF_SIGNED_CERT_IN_CHAIN' }
+25 silly fetchPackageMetaData  error for gulp { [Error: self signed certificate in certificate chain] code: 'SELF_SIGNED_CERT_IN_CHAIN' }
 26 silly rollbackFailedOptional Starting
 27 silly rollbackFailedOptional Finishing
 28 silly runTopLevelLifecycles Starting
@@ -52,7 +53,7 @@
 31 verbose stack     at TLSSocket._finishInit (_tls_wrap.js:585:8)
 32 verbose cwd /Users/virginiacooper/bloc_capstones/movietime
 33 error Darwin 15.6.0
-34 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "grunt-contrib-watch-save-dev"
+34 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "gulp"
 35 error node v4.3.0
 36 error npm  v3.9.5
 37 error code SELF_SIGNED_CERT_IN_CHAIN

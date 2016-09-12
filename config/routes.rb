@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'genre/index'
+
+  get 'genre/show'
+
+  get 'wish_list/index'
+
+  get 'wish_list/show'
+
   resources :carts
 
   resources :movies, only: [:show, :index]

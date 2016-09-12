@@ -6,7 +6,7 @@ class Movie < ActiveRecord::Base
   end
 
   def imdb
-    "#{imdb_id}/"
+    "#{imdb_id}"
   end
   
 end

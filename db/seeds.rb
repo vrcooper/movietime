@@ -83,9 +83,18 @@ Movie.create!(title: "Life Is Beautiful",
               poster_url: 'http://ia.media-imdb.com/images/M/MV5BMTQwMTM2MjE4Ml5BMl5BanBnXkFtZTgwODQ2NTYxMTE@._V1_UX182_CR0,0,182,268_AL_.jpg')
 end
 
+1.times do
+Movie.create!(title: "Spirited Away",
+              release_year: '2001',
+              price: '24.99', 
+              description: "During her family's move to the suburbs, a sullen 10-year-old girl wanders into a world ruled by gods, witches, and spirits, and where humans are changed into beasts.", 
+              imdb_id: 'tt0245429', 
+              poster_url: 'http://ia.media-imdb.com/images/M/MV5BMjYxMDcyMzIzNl5BMl5BanBnXkFtZTYwNDg2MDU3._V1_UY268_CR4,0,182,268_AL_.jpg')
+end
+
 puts "Seed finished"
 puts "#{Movie.count} movies created"
->>>>>>> task-2-models
+
 
 
 # This file should contain all the record creation needed to seed the database with its default values.

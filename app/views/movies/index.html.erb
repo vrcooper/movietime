@@ -1,23 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> movietime </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,800,600,700,300">
+      <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+      <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+      <link rel="stylesheet" type="text/css" href="styles/main.css">
+      <link rel="stylesheet" type="text/css" href="styles/collection.css">
+    </head>
+
+<body class="collection">
+  <nav class="navbar">
+    <!-- <a href="welcome/index.html.erb" class="logo">
+
+      <img src="assets/images/movietime_logo.png" alt="movietime logo">
+    </a> -->
+    
+    <%= image_tag asset_path("movietime_logo.png") %>
+</nav>
+     
 <h4 class="column">movietime</h4>
-<div class="column">
-  <ul class="movies-grid no-bullet row">
-    <% @movies.each do |movie| %>
-      <li class="large-3 medium-4 small-12 column">
-        <div class="movie-card padly">
-          <%= link_to movie, class: "poster" do %>
-          <%= image_tag movie.poster %>
-          <% end %>
-          <div class="movie-info ell glassy-bg padmy padlx">
-            <div class="title">
-              <h6><%= movie.title %> <span>(<%= movie.release_year %>)</span></h6>
-            </div>
-            <p class="left price label movie-label radius">$ <%= movie.price %></p>
-            <%= link_to movie.imb, class: "right" do %>
-              <%= image_tag asset_path("imdb_logo.png") %>
-              <% end %>
-          </div>
-        </div>
-      </li>
-    <% end %>
-  </ul>
-</div>    
+<h1 class="center"> All Movies</h1>
+
+</body>
+</html>

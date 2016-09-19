@@ -6,51 +6,44 @@
   <%= stylesheet_link_tag    'application', media: 'all'%>
   <%= javascript_include_tag 'application'%>
   <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="//maxcdn.boostrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
 </head>
 <body class="stylized">
 
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
-
-<link rel="stylesheet" href="//maxcdn.boostrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
-
-<div class="navbar navbar-inverse navbar-fixed-top role="navigation"">
-
 <div class="container">
 
-<div class="navbar-header">
+  <div class="navbar navbar-inverse navbar-fixed-top role="navigation"">
 
-</div>
+    <div class="navbar-header">
+    </div>
 
-<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-  <span class="sr-only">Toggle navigation</span>
-  <span class="ion-bar"></span>
-  <span class="ion-bar"></span>
-  <span class="ion-bar"></span>
-</button>
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="ion-bar"></span>
+      <span class="ion-bar"></span>
+      <span class="ion-bar"></span>
+    </button>
 
-<!-- <button class="dropbtn"><a href="#"><i class="fa fa-home"></i></a></button> -->
 
-<div class="dropdown">
 
-<button class="dropbtn"><h3>DVD & BLU-RAY</h3></button>
-  <div class="dropdown-content">
-    <a href="#">Genres</a>
-    <a href="#">All Movies</a>
-    <a href="#">Action</a>
-    <a href="#">Comedy</a>
-    <a href="#">Drama</a>
-    <a href="#">Romance</a>
+    <div class="dropdown">
+
+      <a class="btn"><h3>DVD & BLU-RAY</h3></a>
+      <div class="dropdown-content">
+        <a href="#">Genres</a>
+        <a href="#">All Movies</a>
+        <a href="#">Action</a>
+        <a href="#">Comedy</a>
+        <a href="#">Drama</a>
+        <a href="#">Romance</a>
+      </div>
+      <a class="btn"><h3>GAMES</h3></a>
+    </div>
   </div>
-<button class="dropbtn"><h3>GAMES</h3></button>
+
+  <%= yield %>
 </div>
-
-<!--  <div class="container">
-
-    <ul class="nav nav-tabs">
-      <li><%= link_to "movietime", root_path %></li>
-    </ul>
-<%= yield %>
-</div> -->
 
 </body>
 </html>

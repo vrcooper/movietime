@@ -10,18 +10,34 @@
       <link rel="stylesheet" type="text/css" href="styles/collection.css">
     </head>
 
-<body class="collection">
-  <nav class="navbar">
-    <!-- <a href="welcome/index.html.erb" class="logo">
-
-      <img src="assets/images/movietime_logo.png" alt="movietime logo">
-    </a> -->
+<body>
+ 
     
-    <%= image_tag asset_path("movietime_logo.png") %>
-</nav>
+ <!--   <%= image_tag asset_path("movietime_logo.png") %> -->
+
      
-<h4 class="column">movietime</h4>
+<!-- <h4 class="column">movietime</h4> -->
 <h1 class="center"> All Movies</h1>
+
+<h3>New Releases</h3>
+<h3>Trending Now</h3>
+
+<div class="grid-container outline">
+  <div class="row">
+    <div class="col-1"><%image_tag asset_path("TheMatrix.jpg")%></div>
+    <div class="col-1"><p></p></div>
+    <div class="col-1"><p></p></div>
+    <div class="col-1"><p></p></div>
+    <div class="col-1"><p></p></div>
+  </div>
+  <div class="row">
+    <div class="col-1"><p></p></div>
+    <div class="col-1"><p></p></div>
+    <div class="col-1"><p></p></div>
+    <div class="col-1"><p></p></div>
+    <div class="col-1"><p></p></div>
+  </div>
+</div>
 
 </body>
 </html>

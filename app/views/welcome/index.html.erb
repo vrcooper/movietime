@@ -1,32 +1,53 @@
-<h4 class="column">movietime</h4>
-<h1 class="center"> All Movies</h1>
-<div class="column">
-  <ul class="movies-grid no-bullet row">
-    <% @movies.each do |movie| %>
-      <li class="large-3 medium-4 small-12 column">
-        <div class="movie-card padly">
-          <%= link_to movie, class: "poster" do %>
-          <%= image_tag movie.poster %>
-          <% end %>
-          <div class="movie-info ell glassy-bg padmy padlx">
-            <div class="title">
-              <h6><%= movie.title %> <span>(<%= movie.release_year %>)</span></h6>
-            </div>
-            <p class="left price label movie-label radius">$ <%= movie.price %></p>
-            <%#= link_to movie.imdb, class: "right" do %>
-              <%#= image_tag asset_path("imdb_logo.png") %>
-              <%# end %>
-          </div>
-        </div>
-      </li>
-    <% end %>
-  </ul>
-</div>   
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> movietime </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,800,600,700,300">
+      <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+      <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+      <link rel="stylesheet" type="text/css" href="styles/main.css">
+      <link rel="stylesheet" type="text/css" href="styles/collection.css">
+    </head>
 
-<!--  -->
+<body>
+  
+ <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
+ <!-- Indicators -->
 
-<div class="column">
+ <ol class="carousel-indicators">
+  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+  <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+  <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+  <li data-target="#myCarousel" data-slide-to="3" class="active"></li>
+ </ol>
 
+ <!-- Wrapper for slides -->
+ <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="TheMatrix.jpg" alt="Matrix">
+    </div>
 
-</div>
+    <div class="item">
+      <img src="PulpFiction.jpg" alt="PulpFiction">
+    </div>
+
+    <div class="item">
+      <img src="TheGodFather.jpg" alt="The Godfather">
+    </div>
+
+    <div class="item">
+      <img src="Shankshaw.jpg" alt="Shankshaw">
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>

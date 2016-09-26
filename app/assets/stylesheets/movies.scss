@@ -5,6 +5,10 @@
   max-width : 1200px;
 }
 
+.movie-stills {
+  width: 75%; 
+}
+
 // clearfix 
 
 .row:before,
@@ -61,9 +65,6 @@
   box-sizing: border-box;
 }
 
-.outline, .outline * {
-  outline: 1px solid #F8F9F9; 
-}
 
 @media all and (max-width: 800px) {
   .col-1 { width: 33.33%; }

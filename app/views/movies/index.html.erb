@@ -20,22 +20,25 @@
 <h1 class="center"> All Movies</h1>
 
 <h3>New Releases</h3>
-<h3>Trending Now</h3>
+
 
 <div class="grid-container outline">
   <div class="row">
-    <div class="col-1"><%image_tag asset_path("TheMatrix.jpg")%></div>
-    <div class="col-1"><p></p></div>
-    <div class="col-1"><p></p></div>
-    <div class="col-1"><p></p></div>
-    <div class="col-1"><p></p></div>
+    <div class="col-1"><%= image_tag "TheMatrix.jpg", alt:"The Matrix" %></div>
+    <div class="col-1"><%= image_tag "PulpFiction.jpg", alt:"Pulp Fiction" %></div>
+    <div class="col-1"><%= image_tag "TheGodFather.jpg", alt:"The God Father" %></div>
+    <div class="col-1"><%= image_tag "TheDarkKnight.jpg", alt:"The Dark Knight" %></div>
+    <div class="col-1"><%= image_tag "Shankshaw.jpg", alt:"Shankshaw Redemption" %></div>
+  </div>
+  <div class= "row">
+    <div class="col-6"><h3>Trending Now</h3></div>
   </div>
   <div class="row">
-    <div class="col-1"><p></p></div>
-    <div class="col-1"><p></p></div>
-    <div class="col-1"><p></p></div>
-    <div class="col-1"><p></p></div>
-    <div class="col-1"><p></p></div>
+    <div class="col-1"><%= image_tag "LordoftheRingsReturnofKing.jpg", alt:"Lord of the Rings" %></div>
+    <div class="col-1"><%= image_tag "SchindlersList.jpg", alt:"Schindler's List" %></div>
+    <div class="col-1"><%= image_tag "ForrestGump.jpg", alt:"Forrest Gump " %></div>
+    <div class="col-1"><%= image_tag "LifeisBeautiful.jpg", alt:"Life is Beautiful" %></div>
+    <div class="col-1"><%= image_tag "SpiritedAway.jpg", alt:"Spirited Away" %></div>
   </div>
 </div>
 

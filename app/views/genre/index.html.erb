@@ -1,2 +1,48 @@
-<h1>Genre#index</h1>
-<p>Find me in app/views/genre/index.html.erb</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> movietime </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,800,600,700,300">
+      <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+      <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+      <link rel="stylesheet" type="text/css" href="styles/main.css">
+      <link rel="stylesheet" type="text/css" href="styles/collection.css">
+    </head>
+
+<body>
+ 
+    
+ <!--   <%= image_tag asset_path("movietime_logo.png") %> -->
+
+     
+<!-- <h4 class="column">movietime</h4> -->
+
+
+
+<h1 class="center">Action</h1>
+<h1 class="center">Action</h1>
+<h3>New Releases</h3>
+
+<div class="grid-container outline">
+  <div class="row">
+    <div class="col-1"><%= image_tag "TheMatrix.jpg", class:"smaller-image", alt:"The Matrix" %></div>
+    <div class="col-1"><%= image_tag "PulpFiction.jpg", class:"smaller-image", alt:"Pulp Fiction" %></div>
+    <div class="col-1"><%= image_tag "AssassinX.jpg", class:"smaller-image", alt:"Assassin X" %></div>
+    <div class="col-1"><%= image_tag "TheDarkKnight.jpg", class:"smaller-image", alt:"The Dark Knight" %></div>
+    <div class="col-1"><%= image_tag "Allegiant.jpg", class:"smaller-image", alt:"Allegiant" %></div>
+  </div>
+  <div class= "row">
+    <div class="col-6"><h3>Even More Action</h3></div>
+  </div>
+  <div class="row">
+    <div class="col-1"><%= image_tag "CaptainAmerica.jpg", class:"smaller-image", alt:"Captain America" %></div>
+    <div class="col-1"><%= image_tag "DarkKnightRises.jpg", class:"smaller-image", alt:"Dark Knight Rises" %></div>
+    <div class="col-1"><%= image_tag "CaptAmCivilWar.jpg", class:"smaller-image", alt:"Captain America Civil War" %></div>
+    <div class="col-1"><%= image_tag "ManofSteel.jpg", class:"smaller-image", alt:"Man of Steel" %></div>
+    <div class="col-1"><%= image_tag "Sniper.jpg", class:"smaller-image", alt:"Sniper" %></div>
+  </div>
+</div>
+
+</body>
+</html>

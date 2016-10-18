@@ -17,14 +17,18 @@
 
      
 <!-- <h4 class="column">movietime</h4> -->
-<h1 class="center"> All Movies</h1>
+<h1 class="center">All Movies</h1>
 
 <h3>New Releases</h3>
 
 
 <div class="grid-container outline">
   <div class="row">
-    <div class="col-1"><%= image_tag "TheMatrix.jpg", alt:"The Matrix" %></div>
+    
+    <!-- <div class="col-1"><%= image_tag "TheMatrix.jpg", alt:"The Matrix",%></div> -->
+    <div class="col-1"><%= link_to movies_show_path do %> <%=image_tag "TheMatrix.jpg", alt: "The Matrix" %> <% end %>
+      </div>
+
     <div class="col-1"><%= image_tag "PulpFiction.jpg", alt:"Pulp Fiction" %></div>
     <div class="col-1"><%= image_tag "TheGodFather.jpg", alt:"The God Father" %></div>
     <div class="col-1"><%= image_tag "TheDarkKnight.jpg", alt:"The Dark Knight" %></div>

@@ -89,9 +89,26 @@
 }
 
 .smaller-image {
-    width: 100px;
-  }
+  width: 120px; 
+}
 
-.navbar.navbar-inverse .btn {
+
+.navbar.navbar-inverse a {
   color: #FFF;
+
+  font-size: 1.5em;
+  margin-top: 5px;
+}
+
+.navbar.navbar-inverse .dropdown-content a {
+  color: #000000;
+}
+
+.newcenter h1 {
+  border-top: 200px;
+  margin-top: 25px;
+}
+
+.medium p {
+  font-size: 1.5em;
 }

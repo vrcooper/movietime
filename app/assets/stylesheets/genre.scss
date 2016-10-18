@@ -5,9 +5,7 @@
 }
 
 .smaller-image {
-  width: 120px;
-  
-  
+  width: 120px; 
 }
 
 .grid-container {
@@ -102,6 +100,9 @@
   .col-6 { width: 100%; }
 }
 
+.medium p {
+  font-size: 1.5em;
+}
 
 // Place all the styles related to the genre controller here.
 // They will automatically be included in application.css.

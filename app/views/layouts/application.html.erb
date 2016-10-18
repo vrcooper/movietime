@@ -29,16 +29,21 @@
 
     <div class="dropdown">
 
-      <a class="btn"><h3>DVD & BLU-RAY</h3></a>
+      <!-- <a class="btn"><h3>DVD & BLU-RAY</h3></a> -->
+      <%= link_to  "DVD & BLUE-RAY", welcome_index_path, {:class=> "btn" }  %>
+
       <div class="dropdown-content">
-        <a href="#">Genres</a>
-        <a href="#">All Movies</a>
-        <a href="#">Action</a>
-        <a href="#">Comedy</a>
+        <!-- <a href="#">Genres</a> -->
+        <!-- <a href="#">All Movies</a> -->
+        <%= link_to "All Movies", genre_index_path %>
+        <!-- <a href="#">Action</a> -->
+        <!-- <%= link_to "Action", genre_index_path %> -->
+        <!-- <a href="#">Comedy</a>
         <a href="#">Drama</a>
-        <a href="#">Romance</a>
+        <a href="#">Romance</a> -->
       </div>
-      <a class="btn"><h3>GAMES</h3></a>
+
+      <a class="btn">GAMES</a>
     </div>
   </div>
 

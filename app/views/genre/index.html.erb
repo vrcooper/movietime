@@ -19,28 +19,32 @@
 <!-- <h4 class="column">movietime</h4> -->
 
 
+<h1 class="center"> ACTION</h1>
 
 <h1 class="center">Action</h1>
-<h1 class="center">Action</h1>
+
 <h3>New Releases</h3>
 
 <div class="grid-container outline">
   <div class="row">
-    <div class="col-1"><%= image_tag "TheMatrix.jpg", class:"smaller-image", alt:"The Matrix" %></div>
-    <div class="col-1"><%= image_tag "PulpFiction.jpg", class:"smaller-image", alt:"Pulp Fiction" %></div>
-    <div class="col-1"><%= image_tag "AssassinX.jpg", class:"smaller-image", alt:"Assassin X" %></div>
-    <div class="col-1"><%= image_tag "TheDarkKnight.jpg", class:"smaller-image", alt:"The Dark Knight" %></div>
-    <div class="col-1"><%= image_tag "Allegiant.jpg", class:"smaller-image", alt:"Allegiant" %></div>
+    <div class="col-1"><%= link_to genre_show_path do %>
+      <%= image_tag "TheMatrix.jpg", alt:"The Matrix" %> <% end %> </div>
+    <div class="col-1"><%= image_tag "PulpFiction.jpg", alt:"Pulp Fiction" %></div>
+    <div class="col-1"><%= image_tag "AssassinX.jpg", alt:"Assassin X" %></div>
+    <div class="col-1"><%= image_tag "TheDarkKnight.jpg", alt:"The Dark Knight" %></div>
+    <div class="col-1"><%= image_tag "Allegiant.jpg", alt:"Allegiant" %></div>
   </div>
   <div class= "row">
     <div class="col-6"><h3>Even More Action</h3></div>
   </div>
   <div class="row">
-    <div class="col-1"><%= image_tag "CaptainAmerica.jpg", class:"smaller-image", alt:"Captain America" %></div>
-    <div class="col-1"><%= image_tag "DarkKnightRises.jpg", class:"smaller-image", alt:"Dark Knight Rises" %></div>
-    <div class="col-1"><%= image_tag "CaptAmCivilWar.jpg", class:"smaller-image", alt:"Captain America Civil War" %></div>
-    <div class="col-1"><%= image_tag "ManofSteel.jpg", class:"smaller-image", alt:"Man of Steel" %></div>
-    <div class="col-1"><%= image_tag "Sniper.jpg", class:"smaller-image", alt:"Sniper" %></div>
+    <div class="col-1"><%= image_tag "CaptainAmerica.jpg",  alt:"Captain America" %></div>
+    <div class="col-1"><%= image_tag "DarkKnightRises.jpg",  alt:"Dark Knight Rises" %></div>
+    <div class="col-1"><%= image_tag "TeenageMutantNinjas.jpg",  alt:"Teenage Mutant Ninjas" %></div>
+    
+    <div class="col-1"><%= image_tag "ManofSteel.jpg",  alt:"Man of Steel" %></div>
+
+    <div class="col-1"><%= image_tag "Sniper.jpg", alt:"Sniper" %></div>
   </div>
 </div>
 
